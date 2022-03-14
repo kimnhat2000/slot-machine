@@ -23,7 +23,7 @@ class App extends Component {
       return;
     } else if (cardNum >= 8) {
       this.setState({
-        message: "You can't never win with this many slots",
+        message: "You can never win with this many slots",
         freeze: true,
       });
     } else if (cardNum >= 2 || cardNum <= 8) {
@@ -59,7 +59,6 @@ class App extends Component {
       arr.push(Math.floor(Math.random() * 3));
     }
     this.setState({ slotArr: arr });
-    console.log("slotArr", arr);
   };
 
   render() {
